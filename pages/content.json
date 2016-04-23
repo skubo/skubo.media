@@ -21,9 +21,10 @@
       "background": "pages/images/youtube.png",
       "elements": [
         {
-          "type": "image",
-          "src": "pages/images/skubo.media_500.jpg",
-          "position": "center",
+          "type": "text",
+          "font-size": 32,
+          "text": "Hi there. This is just a prototype. Content will follow",
+          "position": "left",
           "width": 500,
           "height": 471
         }

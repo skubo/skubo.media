@@ -31,7 +31,9 @@ foreach ($pages as $page) {
  				echo '<div class="'.$element->{'position'}.'">';
  				echo '<img src="'.$element->{'src'}.'" width="'.$element->{'width'}.'" height="'.$element->{'height'}.'" /></div>';
  				break;
- 			
+ 			case 'text':
+ 				echo '<div class="'.$element->{'position'}.' text" style="font-size:'.$element->{'font-size'}.'">';
+ 				echo $element->{'text'}."</div>";
  			default:
  				# code...
  				break;
