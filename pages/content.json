@@ -22,7 +22,7 @@
       "elements": [
         {
           "type": "text",
-          "font-size": 32,
+          "font-size": "5vw",
           "text": "Hi there. This is just a prototype. Content will follow",
           "position": "left",
           "width": 500,
