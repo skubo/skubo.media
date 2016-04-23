@@ -29,7 +29,7 @@ foreach ($pages as $page) {
  		switch ($element->{'type'}) {
  			case 'image':
  				echo '<div class="'.$element->{'position'}.'">';
- 				echo '<img class="center" src="'.$element->{'src'}.'" width="'.$element->{'width'}.'" height="'.$element->{'height'}.'"></div>';
+ 				echo '<img src="'.$element->{'src'}.'" width="'.$element->{'width'}.'" height="'.$element->{'height'}.'" /></div>';
  				break;
  			
  			default:
