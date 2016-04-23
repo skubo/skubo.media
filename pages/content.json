@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "date": "20160423114500",
+      "icon": "skubo.media_500.jpg",
+      "key": "startpage",
+      "elements": [
+        {
+          "type": "image",
+          "src": "pages/images/skubo.media_500.jpg",
+          "position": "center"
+        }
+      ]
+    }
+  ]
+}

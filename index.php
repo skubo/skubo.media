@@ -16,5 +16,29 @@
 
 </head>
 <body>
+<?php
+$content = json_decode(file_get_contents('pages/content.json'));
+$pages = $content->{'pages'};
+
+foreach ($pages as $page) {
+	echo '<div class="page" id="'.$page->{'key'}.'">';
+
+ 	$elements = $page->{'elements'};
+
+ 	foreach ($elements as $element) {
+ 		switch ($element->{'type'}) {
+ 			case 'image':
+ 				echo '<div class="'.$element->{'position'}.'"><img class="center" src="'.$element->{'src'}.'"></div>';
+ 				break;
+ 			
+ 			default:
+ 				# code...
+ 				break;
+ 		}
+ 	}
+ 	echo '</div>';
+ } 
+?>
+
 </body>
 </html>
