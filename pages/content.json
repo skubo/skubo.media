@@ -8,7 +8,9 @@
         {
           "type": "image",
           "src": "pages/images/skubo.media_500.jpg",
-          "position": "center"
+          "position": "center",
+          "width": 250,
+          "height": 235.5
         }
       ]
     }

@@ -28,7 +28,8 @@ foreach ($pages as $page) {
  	foreach ($elements as $element) {
  		switch ($element->{'type'}) {
  			case 'image':
- 				echo '<div class="'.$element->{'position'}.'"><img class="center" src="'.$element->{'src'}.'"></div>';
+ 				echo '<div class="'.$element->{'position'}.'">';
+ 				echo '<img class="center" src="'.$element->{'src'}.'" width="'.$element->{'width'}.'" height="'.$element->{'height'}.'"></div>';
  				break;
  			
  			default:
