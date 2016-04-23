@@ -18,6 +18,7 @@
       "date": "20160423114500",
       "icon": "skubo.media_500.jpg",
       "key": "introduction",
+      "background": "pages/images/youtube.png",
       "elements": [
         {
           "type": "image",
