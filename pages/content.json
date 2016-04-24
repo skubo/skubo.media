@@ -4,11 +4,11 @@
       "date": "20160423114500",
       "icon": "skubo.media_500.jpg",
       "key": "startpage",
+      "type": "center",
       "elements": [
         {
           "type": "image",
           "src": "pages/images/skubo.media_500.jpg",
-          "position": "center",
           "width": 250,
           "height": 235.5
         }
@@ -19,14 +19,18 @@
       "icon": "skubo.media_500.jpg",
       "key": "introduction",
       "background": "pages/images/youtube.png",
+      "type": "column",
       "elements": [
         {
           "type": "text",
           "font-size": "5vw",
-          "text": "Hi there. This is just a prototype. Content will follow",
-          "position": "left",
-          "width": 500,
-          "height": 471
+          "text": "Hi there. This is just a prototype. Content will follow. Really. Soon. alkdjhflaksdjhflaksdjhfladskjh"
+        },
+        {
+          "type": "image",
+          "src": "https://cdn.eyeem.com/thumb/8f57f5d4b4e9effbf7442389b1d96c9716f2a34d-1459959425096/w/1300",
+          "width": 400,
+          "height": 300
         }
       ]
     }

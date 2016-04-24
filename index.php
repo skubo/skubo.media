@@ -17,29 +17,51 @@
 </head>
 <body>
 <?php
+include('./element.php');
 $content = json_decode(file_get_contents('pages/content.json'));
 $pages = $content->{'pages'};
 
 foreach ($pages as $page) {
-	echo '<div class="page" id="'.$page->{'key'}.'" style="background-image:url('.$page->{'background'}.');">';
+	echo '<div class="page" id="'.$page->{'key'}.'" style="background-image:url('.$page->{'background'}.');">'."\n";
 
  	$elements = $page->{'elements'};
+ 	$pagetype = $page->{'type'};
+ 	switch ($pagetype) {
+ 		case 'center':
+ 			layoutElement($pagetype, $elements[0], 0, 0);
+ 			break;
+ 		
+ 		case 'column':
+ 			$numcols = count($elements);
+ 			// create container divs
+ 			for($i=0; $i<$numcols;$i++) {
+ 				echo '<div class="columncontainer" style="';
+ 				if ($i<$numcols-1) {
+ 					echo 'clear:left;';
+ 				}
+ 				if ($i > 0) {
+ 					echo 'right:'.(100/$numcols).'%;';
+ 				}
+ 				if ($i==0) {
+ 					echo 'overflow: hidden;';
+ 				}
+ 				echo '">'."\n";
+ 			}
+		 	for ($i=0;$i<$numcols;$i++) {
+		 		$element = $elements[$i];
+		 		layoutElement($pagetype, $element, $numcols, ($i+1));
+		 	}
+ 			for($i=0; $i<$numcols;$i++) {
+ 				echo '</div>'."\n";
+ 			}
+ 			break;
 
- 	foreach ($elements as $element) {
- 		switch ($element->{'type'}) {
- 			case 'image':
- 				echo '<div class="'.$element->{'position'}.'">';
- 				echo '<img src="'.$element->{'src'}.'" width="'.$element->{'width'}.'" height="'.$element->{'height'}.'" /></div>';
- 				break;
- 			case 'text':
- 				echo '<div class="'.$element->{'position'}.' text" style="font-size:'.$element->{'font-size'}.'">';
- 				echo $element->{'text'}."</div>";
- 			default:
- 				# code...
- 				break;
- 		}
+ 		default:
+ 			# code...
+ 			break;
  	}
- 	echo '</div>';
+
+ 	echo '</div>'."\n";
  } 
 ?>
 
