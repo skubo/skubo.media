@@ -33,6 +33,26 @@
           "height": 300
         }
       ]
+    },
+    {
+      "date": "20160423114500",
+      "icon": "pages/images/youtube.png",
+      "key": "introduction",
+      "background": "pages/images/eyeem.png",
+      "type": "column",
+      "elements": [
+        {
+          "type": "text",
+          "font-size": "5vw",
+          "text": "I would love to do more photography. Some of my snapshots can be found on my <a href='https://eyeem.com/u/skubo'>Eyeem</a> profile"
+        }, {
+          "type": "image",
+          "src": "http://cdn.eyeem.com/thumb/a927ed8a3bd6beacc0ff6a9c3e35724c32a61cda-1454683499634/2900/2900",
+          "link": "https://www.eyeem.com/u/skubo",
+          "width": "40vw", 
+          "height": "30vw"
+        }
+      ]
     }
   ]
 }
