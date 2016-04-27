@@ -2,8 +2,10 @@
 header('Content-type: application/json');
 // TODO authenticate
 
-$json = "{httpStatus:200}";
 // cumulate content
+$obj = file_get_contents('./content.json');
+
+$json = "{httpStatus:200,obj={".$obj."}}";
 
 // zack return
 echo $json;
