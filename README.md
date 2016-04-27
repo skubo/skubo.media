@@ -36,4 +36,6 @@ As my website is hosted by a provider with only PHP installed, this requires PHP
 * editor for site content (not sure)
 
 ## License
-MIT License (MIT), see LICENSE.md
+* License for Software is: MIT License (MIT), see LICENSE.md
+* For assets like images, these are not creative commons, but beer-license. If you make use of them, please let me know and send me a beer.
+* The font used is YanoneKaffeesatz, which is created by <a href="http://yanone.de">Yanone</a> under creative commons license. Thank you very much!   
