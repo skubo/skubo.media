@@ -4,7 +4,7 @@ Website for http://skubo.media
 ## What is this
 This is the entire content of the website mentioned above. It's not just a static webpage, but intended to be a slimmed down mini CMS to be able to dynamically add and remove content in a very simple form as an "endless full width page" like everybody else is doing nowadays. 
 
-## why is this
+## Why is this
 I had that idea for that new website and needed to decide, what kind of platform I will be building it on. I dislike Wordpress. And Joomla. So I decided to create my own just for that one website. And decided to open source this, so you can do whatever you like with it. 
 
 ## Requirements
@@ -26,13 +26,13 @@ As my website is hosted by a provider with only PHP installed, this requires PHP
 * totally undocumented
 * no page stops, free scrolling
 
-## planned enhancements
+## Planned enhancements
 * page scrolling stops
 * CSS scrolling animations
 * Touch device scrolling enhancements
 * JSON-Interface for reading/writing site content
 
-## possible future enhancements
+## Possible future enhancements
 * editor for site content (not sure)
 
 ## <a href="https://opensource.org/licenses/MIT">MIT license</a>
