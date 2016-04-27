@@ -37,5 +37,5 @@ As my website is hosted by a provider with only PHP installed, this requires PHP
 
 ## License
 * License for Software is: MIT License (MIT), see LICENSE.md
-* For assets like images, these are not creative commons, but beer-license. If you make use of them, please let me know and send me a beer.
-* The font used is YanoneKaffeesatz, which is created by <a href="http://yanone.de">Yanone</a> under creative commons license. Thank you very much!   
+* For assets like images which are not trademarks by other companies, these are not creative commons, but beer-license. If you make use of them, please let me know and send me a beer.
+* The font used is YanoneKaffeesatz, which is created by <a href="http://yanone.de">Yanone</a> under creative commons license. Thank you very much!
