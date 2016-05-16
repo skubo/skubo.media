@@ -21,6 +21,13 @@ include('./element.php');
 $content = json_decode(file_get_contents('pages/content.json'));
 $pages = $content->{'pages'};
 
+// create heda
+echo '<div class="header">';
+foreach ($pages as $page) {
+	echo '<div class="headerelement"></div>';
+}
+echo '</div>';
+
 foreach ($pages as $page) {
 	echo '<div class="page" id="'.$page->{'key'}.'" style="background-image:url('.$page->{'background'}.');">'."\n";
 
