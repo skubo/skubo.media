@@ -12,7 +12,14 @@ function layoutElement($pagetype, $element, $numcols, $col) {
 			if ($link) {
 				echo '<a href="'.$link.'" target="_new">';
 			}
-			echo '<p class="vignette"><img src="'.$element->{'src'}.'" style="width:'.$element->{'width'}.';height:'.$element->{'height'}.';" /></p></div>'."\n";
+			if ($element->{'vignette'} == "true") {
+				echo '<p class="vignette">';
+			}
+			echo '<img src="'.$element->{'src'}.'" style="width:'.$element->{'width'}.';height:'.$element->{'height'}.';" />';
+			if ($element->{'vignette'} == "true") {
+				echo '</p>';
+			}
+			echo '</div>'."\n";
 			if ($link) {
 				echo '</a>';
 			}
@@ -23,8 +30,8 @@ function layoutElement($pagetype, $element, $numcols, $col) {
 				echo 'width:'.((100/$numcols)-4).'%;';
 				echo 'left:'.(2+(100*($numcols-1)/$numcols)+($col-1)*4).'%;';
 			}
-			echo '">';
-			echo $element->{'text'}."</div>"."\n";
+			echo '"><span>';
+			echo $element->{'text'}."</span></div>"."\n";
 			break;
 		case 'youtube':
 			echo '<div class="'.$pagetype.' text" style="font-size:'.$element->{'font-size'}.';';

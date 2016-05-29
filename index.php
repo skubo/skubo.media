@@ -18,18 +18,22 @@
 <body>
 <?php
 include('./element.php');
+include('./column.php');
 $content = json_decode(file_get_contents('pages/content.json'));
 $pages = $content->{'pages'};
 
-// create heda
+// create vanheda
 echo '<div class="header">';
 foreach ($pages as $page) {
-	echo '<div class="headerelement"></div>';
+	echo '<div class="headerelement"><a href="#'.$page->{'key'},'">';
+	echo '<img class="headericon" src="';
+	echo $page->{'icon'};
+	echo '"/></a></div>';
 }
 echo '</div>';
 
 foreach ($pages as $page) {
-	echo '<div class="page" id="'.$page->{'key'}.'" style="background-image:url('.$page->{'background'}.');">'."\n";
+	echo '<a name="'.$page->{'key'}.'"></a><div class="page" style="background-image:url('.$page->{'background'}.');">'."\n";
 
  	$elements = $page->{'elements'};
  	$pagetype = $page->{'type'};
@@ -39,28 +43,7 @@ foreach ($pages as $page) {
  			break;
  		
  		case 'column':
- 			$numcols = count($elements);
- 			// create container divs
- 			for($i=0; $i<$numcols;$i++) {
- 				echo '<div class="columncontainer" style="';
- 				if ($i<$numcols-1) {
- 					echo 'clear:left;';
- 				}
- 				if ($i > 0) {
- 					echo 'right:'.(100/$numcols).'%;';
- 				}
- 				if ($i==0) {
- 					echo 'overflow: hidden;';
- 				}
- 				echo '">'."\n";
- 			}
-		 	for ($i=0;$i<$numcols;$i++) {
-		 		$element = $elements[$i];
-		 		layoutElement($pagetype, $element, $numcols, ($i+1));
-		 	}
- 			for($i=0; $i<$numcols;$i++) {
- 				echo '</div>'."\n";
- 			}
+ 			layoutColumn($pagetype, $elements);
  			break;
 
  		default:

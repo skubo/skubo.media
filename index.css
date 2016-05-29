@@ -1,30 +1,39 @@
 @import url('YanoneKaffeesatz-Regular.css');
 
 body {
-    background: black;
+    background: #67b9de;
     margin:0;
     padding: 0;
 }
 a {
-	color:#DDFFEF;
+	color:#441244;
 }
 a:active {
-	color:#EFEFFF;
+	color:#774577;
 }
 a:hover {
-	color:#FFEFDD;
+	color:#774577;
 }
 .header {
-	height:10%;
+	position: fixed;
 	opacity: 0.6;
+	z-index: 999;
 }
 .headerelement {
+	margin-top: 5px;
+	height: 10vw;
+	width: 10vw;
+	float: left;
 	color: #E0E0E0;
 }
+.headericon {
+	height: 9vw;
+} 
 .page {
 	height:100%;
    	background-repeat: no-repeat;
-   	background-size: 120%;
+   	background-size: 100%;
+   	z-index: 99;
 }
 .center {
 	height: 100%;
@@ -44,15 +53,19 @@ a:hover {
 	width:100%;
 }
 .column {
-	padding-top: 10%;
-	padding-bottom: 10%;
 	height:100%;
 	position:relative;
 	float: left;
 	overflow: hidden;
 }
+span {
+  display: table-cell;
+  vertical-align: middle;
+  
+}
 .text {
-	color: #CDCDCD;
+	display: table;
+	color: #020256;
 	height: 100%;
 	font-family: 'YanoneKaffeesatz-Regular';
 }

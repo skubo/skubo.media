@@ -2,56 +2,194 @@
   "pages": [
     {
       "date": "20160423114500",
-      "icon": "skubo.media_500.jpg",
+      "icon": "pages/images/skubo.media_1024.png",
       "key": "startpage",
       "type": "center",
       "elements": [
         {
           "type": "image",
-          "src": "pages/images/skubo.media_500.jpg",
+          "src": "pages/images/skubo.media_1024.png",
           "width": 250,
-          "height": 235.5
+          "height": 250,
+          "vignette": "false"
         }
       ]
     },
     {
       "date": "20160423114500",
-      "icon": "skubo.media_500.jpg",
-      "key": "introduction",
-      "background": "pages/images/youtube.png",
+      "icon": "pages/images/youtube_256.png",
+      "key": "youtube",
+      "background": "",
       "type": "column",
       "elements": [
         {
-          "type": "text",
-          "font-size": "5vw",
-          "text": "Hi there. This is just a prototype. Content will follow. Really. Soon. alkdjhflaksdjhflaksdjhfladskjh"
+          "type": "image",
+          "src": "pages/images/letsbolz.jpg",
+          "width": "50vw",
+          "height": "30vw",
+          "vignette": "false"
         },
         {
-          "type": "image",
-          "src": "https://cdn.eyeem.com/thumb/8f57f5d4b4e9effbf7442389b1d96c9716f2a34d-1459959425096/w/1300",
-          "width": 400,
-          "height": 300
+          "type": "text",
+          "font-size": "4vw",
+          "text": "My <a href='https://www.youtube.com/user/himselbrimsel'>Youtube Channel</a> does (will) have videos in german and english of various type, including gaming, music, 3D printing and other."
         }
       ]
     },
     {
       "date": "20160423114500",
-      "icon": "pages/images/youtube.png",
-      "key": "introduction",
-      "background": "pages/images/eyeem.png",
+      "icon": "pages/images/eyem_256.png",
+      "key": "eyeem",
+      "background": "",
       "type": "column",
       "elements": [
         {
           "type": "text",
           "font-size": "5vw",
           "text": "I would love to do more photography. Some of my snapshots can be found on my <a href='https://eyeem.com/u/skubo'>Eyeem</a> profile"
-        }, {
+        },
+        {
           "type": "image",
           "src": "http://cdn.eyeem.com/thumb/a927ed8a3bd6beacc0ff6a9c3e35724c32a61cda-1454683499634/2900/2900",
           "link": "https://www.eyeem.com/u/skubo",
-          "width": "40vw", 
-          "height": "30vw"
+          "width": "40vw",
+          "height": "30vw",
+          "vignette": "true"
         }
+      ]
+    },
+    {
+      "date": "20160423114500",
+      "icon": "pages/images/medium_256_bw.png",
+      "key": "medium",
+      "background": "",
+      "type": "column",
+      "elements": [
+        {
+          "type": "image",
+          "src": "pages/images/medium_256.png",
+          "link": "https://medium.com/@skubo",
+          "width": "40vw",
+          "height": "40vw",
+          "vignette": "false"
+        },
+        {
+          "type": "text",
+          "font-size": "5vw",
+          "text": "Sometimes I feel like <a href='https://medium.com/@skubo'>writing in english</a>. Medium is a great place to share writings, so I gave it a shot there. I'm not a native speaker, so please give me feedback in case it reads kind of odd."
+        }
+      ]
+    },
+    {
+      "date": "20160423114500",
+      "icon": "pages/images/blogofon_256_bw.png",
+      "key": "blogofon",
+      "background": "",
+      "type": "column",
+      "elements": [
+        {
+          "type": "text",
+          "font-size": "4vw",
+          "text": "Seit über 5 Jahren blogge ich auf <a href='http://blogofon.ch'>http://blogofon.ch</a> über persönliche, gesellschaftliche, technische und zum teil auch podcastige Dinge. Mal interessant, mal Pocorn. But here to stay."
+        },
+        {
+          "type": "image",
+          "src": "pages/images/blogofon_512.png",
+          "link": "http://blogofon.ch",
+          "width": "40vw",
+          "height": "40vw",
+          "vignette": "false"
+        }
+      ]
+    },
+    {
+      "date": "20160423114500",
+      "icon": "pages/images/appstore_256_bw.png",
+      "key": "appstore",
+      "background": "",
+      "type": "column",
+      "elements": [
+        {
+          "type": "image",
+          "src": "pages/images/appstore_512.png",
+          "link": "http://ga.rbers.net",
+          "width": "40vw",
+          "height": "40vw",
+          "vignette": "false"
+        },
+        {
+          "type": "text",
+          "font-size": "4vw",
+          "text": "Over there at <a href='http://ga.rbers.net'>ga.rbers.net</a> are my App Store listed apps. Currently, this is kind of idle, but who knows..."
+        }
+      ]
+    },
+    {
+      "date": "20160423114500",
+      "icon": "pages/images/github_256.png",
+      "key": "github",
+      "background": "",
+      "type": "column",
+      "elements": [
+        {
+          "type": "text",
+          "font-size": "4vw",
+          "text": "I have some open source code up on <a href='https://github.com/skubo'>github</a>, amongst it there's the source of this entire website. So go check it out and give me stars :)"
+        },
+        {
+          "type": "image",
+          "src": "pages/images/github_512.png",
+          "link": "https://github.com/skubo",
+          "width": "40vw",
+          "height": "40vw",
+          "vignette": "false"
+        }
+      ]
+    },
+    {
+      "date": "20160423114500",
+      "icon": "pages/images/thingiverse_256_bw.png",
+      "key": "thingie",
+      "background": "",
+      "type": "column",
+      "elements": [
+        {
+          "type": "image",
+          "src": "pages/images/thingiverse_512.png",
+          "link": "http://www.thingiverse.com/skubo/designs",
+          "width": "40vw",
+          "height": "40vw",
+          "vignette": "false"
+        },
+        {
+          "type": "text",
+          "font-size": "4vw",
+          "text": "3D printing is a great hobby of mine. I have uploaded some designs to my blog at blogofon.ch, but some will also be posted at <a href='http://www.thingiverse.com/skubo/designs'>Thingiverse</a>."
+        }
+      ]
+    },
+        {
+      "date": "20160423114500",
+      "icon": "pages/images/contact_128.png",
+      "key": "contact",
+      "type": "column",
+      "elements": [
+        {
+          "type": "text",
+          "font-size": "8vw",
+          "text": ""
+        },
+        {
+          "type": "text",
+          "font-size": "3vw",
+          "text": "contact ( at ) skubo.media<br/><a href='https://twitter.com/skubo'>https://twitter.com/skubo</a>"
+        },
+        {
+          "type": "text",
+          "font-size": "8vw",
+          "text": ""
+        }
+
       ]
     }
   ]
