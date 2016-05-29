@@ -19,7 +19,7 @@
       "date": "20160423114500",
       "icon": "pages/images/youtube_256.png",
       "key": "youtube",
-      "background": "",
+      "background": "#56a8cd",
       "type": "column",
       "elements": [
         {
@@ -62,7 +62,7 @@
       "date": "20160423114500",
       "icon": "pages/images/medium_256_bw.png",
       "key": "medium",
-      "background": "",
+      "background": "#56a8cd",
       "type": "column",
       "elements": [
         {
@@ -106,7 +106,7 @@
       "date": "20160423114500",
       "icon": "pages/images/appstore_256_bw.png",
       "key": "appstore",
-      "background": "",
+      "background": "#56a8cd",
       "type": "column",
       "elements": [
         {
@@ -138,7 +138,7 @@
         },
         {
           "type": "image",
-          "src": "pages/images/github_512.png",
+          "src": "pages/images/github.svg",
           "link": "https://github.com/skubo",
           "width": "40vw",
           "height": "40vw",
@@ -150,7 +150,7 @@
       "date": "20160423114500",
       "icon": "pages/images/thingiverse_256_bw.png",
       "key": "thingie",
-      "background": "",
+      "background": "#56a8cd",
       "type": "column",
       "elements": [
         {

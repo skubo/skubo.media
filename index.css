@@ -58,6 +58,13 @@ a:hover {
 	float: left;
 	overflow: hidden;
 }
+.firstpagefooter
+{
+position:absolute;
+bottom:20px;
+text-align: center;
+width:100%;
+}
 span {
   display: table-cell;
   vertical-align: middle;

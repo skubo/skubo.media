@@ -32,8 +32,11 @@ foreach ($pages as $page) {
 }
 echo '</div>';
 
+// footer on first page
+echo '<div class="firstpagefooter"><img src="pages/images/arrowdown.png" height="40"></div>';
+
 foreach ($pages as $page) {
-	echo '<a name="'.$page->{'key'}.'"></a><div class="page" style="background-image:url('.$page->{'background'}.');">'."\n";
+	echo '<a name="'.$page->{'key'}.'"></a><div class="page" style="background:'.$page->{'background'}.'">'."\n";
 
  	$elements = $page->{'elements'};
  	$pagetype = $page->{'type'};
