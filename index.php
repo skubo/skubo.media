@@ -10,10 +10,10 @@
 <meta name="author" content="Chris Garbers" />
  
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-<link rel="apple-touch-icon" href="/static/images/app-logo-64px.png" />
-<link rel="apple-touch-icon-precomposed" href="/static/images/app-logo-64px.png" />
+<link rel="apple-touch-icon" href="pages/images/skubo.media_64.png" />
+<link rel="apple-touch-icon-precomposed" href="pages/images/skubo.media_64.png" />
 <link rel="stylesheet" href="index.css" type="text/css" />
-
+<link rel="icon" href="http://skubo.media/pages/images/bone.png">
 </head>
 <body>
 <?php
