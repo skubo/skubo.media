@@ -134,7 +134,7 @@
         {
           "type": "text",
           "font-size": "4vw",
-          "text": "I have some open source code up on <a href='https://github.com/skubo'>github</a>, amongst it there's the source of this entire website. So go check it out and give me stars :)"
+          "text": "Some open source code where I laid my hands on is up on <a href='https://github.com/skubo'>github</a>, amongst it there's the source of this entire website. So go check it out and give me stars :)"
         },
         {
           "type": "image",
